@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#101827">
+<meta name="description" content="Painel de preparação e cuidados para iPhone 11.">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icon-192.png">
+<title>iPhone 11 Turbo</title>
+<style>
+:root{color-scheme:dark;--bg:#0b1220;--panel:#151f30;--panel2:#1d2b40;--text:#f4f7fb;--muted:#aab8ca;--cyan:#67d9ff;--green:#65d6a2;--line:#2b3a50}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top,#1b3550 0,#0b1220 48%);color:var(--text);font:16px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;padding:env(safe-area-inset-top) 16px calc(24px + env(safe-area-inset-bottom))}
+main{max-width:680px;margin:auto}.top{display:flex;align-items:center;justify-content:space-between;padding:20px 2px 14px}.brand{display:flex;gap:11px;align-items:center}.logo{width:45px;height:45px;border-radius:14px;background:linear-gradient(145deg,#1b9ac7,#3154a4);display:grid;place-items:center;font-size:24px;box-shadow:0 8px 28px #0005}.eyebrow{font-size:11px;letter-spacing:1.5px;color:var(--cyan);font-weight:800}.brand h1{font-size:20px;margin:2px 0}.pill{border:1px solid #31516a;border-radius:30px;padding:6px 10px;color:var(--green);font-size:11px;font-weight:700}
+.hero{background:linear-gradient(135deg,#1b3854,#17243a 65%,#202b49);border:1px solid #35506b;border-radius:23px;padding:20px;margin:8px 0 16px}.hero h2{font-size:25px;margin:0 0 7px}.hero p{color:#c1d1e3;margin:0;line-height:1.45;font-size:14px}.hero .tag{margin-top:16px;display:inline-block;background:#0c1b2c88;border-radius:9px;padding:8px 10px;color:#bfeeff;font-size:12px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.card{background:var(--panel);border:1px solid var(--line);border-radius:17px;padding:15px}.card h3{margin:0 0 7px;font-size:15px}.card p,.muted{color:var(--muted);font-size:13px;line-height:1.45;margin:0}.ico{font-size:22px;margin-bottom:8px}.section{margin:22px 0 11px;font-size:17px}.wide{grid-column:1/-1}.check{display:flex;gap:11px;align-items:flex-start;padding:12px 0;border-bottom:1px solid var(--line)}.check:last-child{border:0}.check input{width:20px;height:20px;accent-color:#36b9e8;flex:none;margin:1px 0}.check label{font-size:14px;line-height:1.35}.btn{border:0;border-radius:12px;background:linear-gradient(90deg,#159ac8,#4169d5);color:white;padding:13px 15px;font-size:14px;font-weight:750;width:100%;margin-top:12px}.btn.secondary{background:#26364d;border:1px solid #40536c}.field{width:100%;border:1px solid #3a4c63;border-radius:11px;padding:12px;background:#0f1928;color:white;font-size:15px;margin:7px 0 12px}.note{background:#2b2518;border:1px solid #66502b;border-radius:14px;padding:13px;color:#f4d9a5;font-size:12px;line-height:1.5;margin-top:14px}.footer{text-align:center;color:#8091a7;font-size:11px;padding:22px 8px}.nav{display:flex;gap:8px;margin:14px 0}.nav button{flex:1;border:1px solid var(--line);background:#121d2d;color:var(--muted);padding:10px 5px;border-radius:11px;font-size:12px}.nav button.active{background:#1d3a54;color:#fff;border-color:#4380a7}
+</style>
+</head>
+<body>
+<main>
+<header class="top">
+ <div class="brand"><div class="logo">⚡</div><div><div class="eyebrow">PAINEL INTELIGENTE</div><h1>iPhone 11 Turbo</h1></div></div>
+ <span class="pill">V1.0 • BETA</span>
+</header>
+<section class="hero">
+ <div class="eyebrow">PREPARAÇÃO GAMER</div>
+ <h2>Seu jogo começa aqui.</h2>
+ <p>Faça uma preparação segura antes de abrir o Free Fire e acompanhe os cuidados básicos do seu iPhone.</p>
+ <span class="tag">🎮 Perfil: Free Fire • iPhone 11</span>
+</section>
+<div class="nav" role="tablist">
+ <button class="active" data-tab="jogo">🎮 Jogo</button><button data-tab="saude">🔋 Cuidados</button><button data-tab="sobre">ℹ️ Limites</button>
+</div>
+<section id="jogo">
+ <div class="grid">
+  <article class="card"><div class="ico">🎯</div><h3>Preparação</h3><p>Checklist antes da partida, sem prometer aumento artificial de FPS.</p></article>
+  <article class="card"><div class="ico">🧊</div><h3>Controle de calor</h3><p>Evite jogar enquanto o aparelho estiver muito quente ou carregando.</p></article>
+ </div>
+ <h2 class="section">Checklist antes de jogar</h2>
+ <div class="card" id="checklist">
+  <div class="check"><input type="checkbox" id="c1"><label for="c1">Desativar Modo Pouca Energia, se quiser priorizar desempenho.</label></div>
+  <div class="check"><input type="checkbox" id="c2"><label for="c2">Fechar downloads e gravações de tela que não estiver usando.</label></div>
+  <div class="check"><input type="checkbox" id="c3"><label for="c3">Deixar o iPhone em local ventilado e retirar capas que retenham calor.</label></div>
+  <div class="check"><input type="checkbox" id="c4"><label for="c4">Usar gráficos Suave e testar a opção de FPS estável disponível no jogo.</label></div>
+  <div class="check"><input type="checkbox" id="c5"><label for="c5">Conferir se há espaço livre em Ajustes → Geral → Armazenamento do iPhone.</label></div>
+  <button class="btn" id="reset">Reiniciar checklist</button>
+ </div>
+ <button class="btn" id="openGame">Abrir Free Fire</button>
+ <p class="muted" style="margin-top:8px">Se o botão não encontrar o jogo, abra-o manualmente. O iOS pode bloquear links de aplicativos não registrados.</p>
+</section>
+<section id="saude" hidden>
+ <h2 class="section">Cuidados com a bateria</h2>
+ <div class="card">
+  <p>Consulte a saúde real em <b>Ajustes → Bateria → Saúde da Bateria e Carregamento</b>. Este app não consegue ler esse dado diretamente.</p>
+  <label for="health" class="muted">Saúde máxima informada por você (%)</label>
+  <input class="field" id="health" type="number" min="1" max="100" inputmode="numeric" placeholder="Ex.: 76">
+  <button class="btn" id="saveHealth">Salvar informação neste aparelho</button>
+  <p id="healthResult" class="muted" aria-live="polite"></p>
+ </div>
+ <h2 class="section">Observação de aquecimento</h2>
+ <div class="card">
+  <label for="heat" class="muted">Como o iPhone está durante o jogo?</label>
+  <select class="field" id="heat"><option value="">Selecione</option><option>Normal</option><option>Morno</option><option>Muito quente</option></select>
+  <button class="btn secondary" id="saveHeat">Salvar observação</button>
+  <p id="heatResult" class="muted" aria-live="polite"></p>
+ </div>
+ <div class="note">Se aparecer aviso de temperatura, interrompa o uso e deixe o aparelho esfriar naturalmente, longe do sol. Não coloque na geladeira ou no freezer.</div>
+</section>
+<section id="sobre" hidden>
+ <h2 class="section">O que este app pode fazer?</h2>
+ <div class="card">
+  <p><b>Consegue:</b> organizar um checklist, guardar informações que você digitar e abrir o jogo quando o iOS permitir.</p><br>
+  <p><b>Não consegue:</b> limpar RAM do sistema, alterar a velocidade do processador, medir temperatura interna, ler a saúde da bateria automaticamente ou garantir aumento de FPS.</p><br>
+  <p><b>Privacidade:</b> esta versão guarda suas marcações e anotações somente no armazenamento local do navegador. Não envia esses dados a um servidor.</p>
+ </div>
+ <div class="note">O iPhone 11 pode reduzir o desempenho quando aquece ou quando a bateria está degradada. Se houver lentidão frequente, confira a saúde da bateria e o armazenamento nos Ajustes do iOS.</div>
+</section>
+<footer class="footer">iPhone 11 Turbo • Ferramenta independente, não afiliada à Apple ou à Garena.</footer>
+</main>
+<script>
+const ids=['c1','c2','c3','c4','c5'];
+ids.forEach(id=>{const el=document.getElementById(id);el.checked=localStorage.getItem(id)==='1';el.addEventListener('change',()=>localStorage.setItem(id,el.checked?'1':'0'));});
+document.getElementById('reset').onclick=()=>{ids.forEach(id=>{document.getElementById(id).checked=false;localStorage.removeItem(id);});};
+document.querySelectorAll('.nav button').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.nav button').forEach(x=>x.classList.toggle('active',x===b));['jogo','saude','sobre'].forEach(id=>document.getElementById(id).hidden=id!==b.dataset.tab);}));
+document.getElementById('saveHealth').onclick=()=>{let v=Number(document.getElementById('health').value);let out=document.getElementById('healthResult');if(!Number.isInteger(v)||v<1||v>100){out.textContent='Digite um valor inteiro entre 1 e 100.';return;}localStorage.setItem('health',v);out.textContent='Informação salva: '+v+'%. É um valor informado por você, não uma medição do app.';};
+const h=localStorage.getItem('health');if(h){document.getElementById('health').value=h;document.getElementById('healthResult').textContent='Último valor informado: '+h+'%.';}
+document.getElementById('saveHeat').onclick=()=>{const v=document.getElementById('heat').value;localStorage.setItem('heat',v);document.getElementById('heatResult').textContent=v?'Observação salva: '+v+'.':'Selecione uma opção.';};
+document.getElementById('openGame').onclick=()=>{location.href='freefire://';setTimeout(()=>{},500);};
+if('serviceWorker' in navigator && location.protocol.startsWith('http')) navigator.serviceWorker.register('./sw.js').catch(()=>{});
+</script>
+</body></html>
